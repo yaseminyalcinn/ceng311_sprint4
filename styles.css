@@ -1,0 +1,413 @@
+/* Reset styles */
+/* Apply a basic reset to remove default margin, padding, and box-sizing behavior */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+/* Set global styles for the body, including font family, background color, and line height */
+body {
+    font-family: 'Roboto', Arial, sans-serif; 
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* Container styles */
+/* Center the content within a max-width container with some padding */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header and footer styles */
+/* Style the header and footer with a background color, text color, and padding */
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Logo styles */
+/* Center the logo and add some bottom margin */
+.logo {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Logo image styles */
+/* Set the width of the logo image to 100px and maintain aspect ratio */
+.logo img {
+    width: 100px; 
+    height: auto;
+}
+
+/* Section heading styles */
+/* Style section headings with a specific font, alignment, color, and size */
+h1 {
+    font-family: 'Bradley Hand', cursive; 
+    font-size: 40px; 
+    text-align: center; 
+    color:#2e2d2d; 
+}
+
+/* Specific section heading styles */
+/* Style specific section headings with Bradley Hand font and specific colors */
+section h2, .event-description h2 {
+    font-family: 'Bradley Hand', cursive; 
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2e2d2d; 
+    font-size: 28px; 
+}
+
+/* Specific section heading styles */
+/* Style specific section headings with Bradley Hand font, specific size, and color */
+section h3 {
+    font-family: 'Bradley Hand', cursive; 
+    font-size: 24px; 
+    margin-bottom: 10px;
+    color: #4d4b4b; 
+}
+
+
+
+/* Paragraph styles */
+/* Set font family, size, and color for paragraphs */
+section p ,.event-description p{
+    font-family:  'Bradley Hand', cursive; 
+    font-size: 20px; 
+    color: #726f6f; 
+}
+
+/* Navigation styles */
+/* Style navigation list */
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+/* Navigation list item styles */
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Navigation link styles */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Navigation link hover styles */
+nav ul li a:hover {
+    color: #ff7f0e;
+}
+
+/* Main content styles */
+/* Add padding around the main content */
+main {
+    padding: 40px;
+}
+
+/* Section styles */
+/* Style sections with border, border-radius, and padding */
+section {
+    margin-bottom: 40px;
+    border: 2px solid #ccc; 
+    border-radius: 8px; 
+    padding: 20px; 
+}
+
+/* Info section styles */
+/* Display info section as a flex container with column direction */
+.info {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #ccc; 
+    border-radius: 8px; 
+    margin-bottom: 20px; 
+}
+
+/* Info text and image styles */
+/* Add padding to text and image sections */
+.info-text, .info-image {
+    padding: 20px;
+}
+
+/* Info text paragraph styles */
+/* Set font size and color for info text paragraphs */
+.info-text p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Info image styles */
+/* Center the image in the info section */
+.info-image {
+    text-align: center;
+}
+
+/* Info image styles */
+/* Set max-width for images and add border radius and box shadow */
+.info-image img {
+    max-width: 100%;
+    height: 400px;
+}
+
+
+.slider {
+    margin: 0 auto; 
+    max-width: 300px; 
+    width: 100%; 
+}
+
+
+.slider img {
+    width: 300px;
+    height: 450px;
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+}
+
+
+
+/* Thumbnail image styles */
+/* Set width for thumbnail images */
+.thumbnail-container .thumbnail img {
+    width: 100px;
+}
+
+/* Social links styles */
+/* Style social links list */
+.social-links {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+/* Social links list item styles */
+.social-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+/* Social links styles */
+.social-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Social links hover styles */
+.social-links li a:hover {
+    color:#ff7f0e;
+}
+
+/* Thumbnail container styles */
+/* Center the thumbnail container and add margin at the top */
+.thumbnail-container {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+/* Thumbnail styles */
+/* Display thumbnails inline-block with margin */
+.thumbnail {
+    display: inline-block; 
+    margin-right: 10px; 
+}
+
+/* Thumbnail image styles */
+/* Set width, height, and cursor for thumbnail images */
+.thumbnail img {
+    width: 100px; 
+    height: auto; 
+    cursor: pointer; 
+}
+
+/* Gallery styles */
+/* Display images in a grid with responsive column sizes */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    transform: translateX(-5%);
+}
+
+/* Image styles */
+/* Position images relative with margin at the bottom and transition effects */
+.image {
+    position: relative;
+    margin-bottom: 45px; 
+    transition: z-index 0.3s, transform 0.3s; 
+}
+
+
+
+/* Image styles */
+/* Set width, height, and object fit for images */
+.image img {
+    width: 400px; 
+    height: 400px;
+    object-fit: contain; 
+}
+/* Caption styles */
+/* Position the caption at the bottom center, with specific color, text alignment, and width */
+.caption {
+    position: absolute;
+    bottom: -40px;
+    left: 92%;
+    transform: translateX(-50%);
+    color: #1b3076;
+    text-align: center;
+    width: 90%;
+}
+
+/* Event styles */
+/* Add margin to the bottom of the event */
+.event {
+    margin-bottom: 20px;
+}
+
+/* Event content styles */
+/* Display event content as flex with center alignment, and add border and border-radius */
+.event-content {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border: 2px solid #333;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Image styles */
+/* Set width, height, and object-fit for images */
+img {
+    width: 800px; 
+    height: 500px;
+    object-fit: contain; 
+}
+
+/* Event description styles */
+/* Set flex to 1, add padding, and center align the text */
+.event-description {
+    flex: 1; 
+    padding: 20px; 
+    text-align: center;
+}
+
+/* Support form styles */
+/* Add margin to the bottom of the support form */
+#support-form {
+    margin-bottom: 40px;
+}
+
+/* Support form container styles */
+/* Set max-width and center the container */
+#support-form .container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Support form heading styles */
+/* Set font family, text alignment, margin bottom, color, and font size for the heading */
+#support-form h2 {
+    font-family: 'Bradley Hand', cursive;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2e2d2d;
+    font-size: 28px;
+}
+
+/* Support form styles */
+/* Set background color, padding, and border-radius for the form */
+#support-form form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Support form label styles */
+/* Display labels as block with margin bottom */
+#support-form form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Support form input styles */
+/* Set width, padding, margin bottom, border, and border-radius for inputs */
+#support-form form input[type="text"],
+#support-form form input[type="email"],
+#support-form form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Support form textarea styles */
+/* Set vertical resizing for textarea */
+#support-form form textarea {
+    resize: vertical; 
+}
+
+/* Support form button styles */
+/* Set background color, text color, padding, border, border-radius, cursor, and transition for the button */
+#support-form form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Support form button hover styles */
+/* Change background color on hover */
+#support-form form button:hover {
+    background-color: #ff7f0e;
+}
+
+/* support.css*/
+.ui-autocomplete {
+    background-color: white;
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto; 
+    overflow-x: hidden;
+    padding: 0;
+    list-style-type: none;
+    width: auto;
+    z-index: 1000; 
+}
+
+
+input:invalid, input:required {
+    border: 2px solid red;
+}
+
+input:valid {
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.event-info {
+    display: flex;
+    align-items: center;
+}
+
+.event-info img {
+    width: 200px; 
+    height: auto;
+    margin-right: 20px; 
+}
+
+.event-details {
+    flex: 1;
+}
+
